@@ -18,7 +18,7 @@ public class Account {
 
     @OneToMany(mappedBy = "account", cascade = CascadeType.ALL)
     @ToString.Exclude
-    private List<Transaction> accountTransactions; /*a list of transactions associated with the account*/
+    private List<Transaction> accountTransactions;
 
 
     public String getAccountName() {
